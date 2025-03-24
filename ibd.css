@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+   height: 100vh;
+   width: 100%;
+   position: relative;
+}
+body::before{
+    content: "";
+    height: 100vh;
+    width: 100%;
+    filter: brightness(50%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(hotels1.jpg);
+    background-image: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.container{
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 30px;
+    left: 36%;
+
+}
+.container input{
+    padding: 10px 80px;
+    transition: 0.6s transform ease ;
+}
+
+.container input:hover{
+    background-color: azure;
+    transform: scale(1.1);
+}
+.name,.nameL,.email,.button,.pass,.Pnumber{
+    margin-top: 20px;
+    flex-direction: column;
+    
+    border-radius: 60px  ;
+    border-color:  black;
+    color: black;
+   
+}
+.submite{
+    padding: 10px 14px;
+   background-color: rgb(212, 61, 38);
+   border-radius: 50px;
+   color: white;
+   margin-top: 50px;
+   text-decoration: none;
+   cursor: pointer;
+   transition: 0.4s transform ease;
+}
+.submite a{
+    color: white;
+}
+
+.submite:hover{
+    background-color: rgb(201, 17, 17);
+    transform: scale(1.1);
+    color: white;
+}
+
+
+.tital{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding-top: 27px;
+    
+}
+.tital span{
+    padding-left: 20px;
+    color: rgb(248, 24, 24);
+}
+.titall{
+    position: absolute;
+    top: 13px;
+    left: 20px;
+    font-size: 23px;
+    text-shadow: 5px 5px 30px rgb(255, 255, 255);
+    color: white;
+}
+.titall span{
+    color: rgb(216, 52, 30);
+    text-shadow: 5px 5px 30px rgb(218, 26, 26);
+}

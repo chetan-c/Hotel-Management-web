@@ -1,0 +1,146 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+body::before{
+    content: " ";
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background-image: url(hotels1.jpg);
+    background-image: cover;
+    background-position:center;
+    filter: brightness(35%);
+    z-index: -1;
+}
+
+
+.tital {
+    display: inline-block;
+    animation: waveText 1.3s infinite alternate;
+    }
+    @keyframes waveText {
+    0% {
+    transform: rotate(4deg);
+    }
+    100% {
+    transform: rotate(-3deg);
+    }
+    }
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.container a{
+    color: white ;
+    font-size: 17px;
+    text-decoration: none;
+    padding: 20px 70px;
+    
+    cursor: pointer;
+    transform: 0.6 transform ease;
+}
+.container a:hover{
+    color: rgb(255, 73, 18);
+    transform: scale(1.4);
+}
+
+
+.bg img{
+   
+    height: 110px;
+    width: 110px;
+    position: absolute;
+    top: 1%;
+    left: 1%;
+}
+.tital{
+    position: absolute;
+    top: 34%;
+    left: 25%;
+    justify-content: center;
+    align-items: center;
+
+}
+.tital h1{
+    color: white;
+    text-align: center;
+}
+
+.tital h3{
+    color: white;
+    padding-top: 10px;
+    text-align: center;
+}
+span{
+    color: rgb(255, 2, 2);
+}
+.button{
+    position: absolute;
+    top: 55%;
+    left: 46.5%;
+    padding: 8px 8px;
+    border-radius: 10%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 68, 68);
+    transition: 0.6s transform ease;
+}
+.button:hover{
+    
+transform: scale(1.2);
+background-color: rgb(227, 58, 6);
+
+}
+.button a{
+    text-decoration: none;
+    color: white;
+   
+}
+a{
+    transform: scale(0.1);
+    opacity: 0;
+    animation: zoomFade 1.6s ease-in-out forwards;
+    }
+    @keyframes zoomFade {
+    100% {
+    opacity: 1;
+    transform: scale(1);
+    }
+    }
+
+.titall{
+    position: absolute;
+    top: 13px;
+    left: 20px;
+    font-size: 23px;
+    text-shadow: 5px 5px 30px rgb(255, 255, 255);
+    color: white;
+}
+.titall span{
+    color: rgb(216, 52, 30);
+    text-shadow: 5px 5px 30px rgb(218, 26, 26);
+}
+  footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background:linear-gradient(to right, #00093c, #2d0b00) ;
+    color: white;
+    padding:100px 0 30px ;
+    border-top-left-radius: 125px;
+    font-size: 13px;
+    
+  } 

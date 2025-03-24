@@ -1,0 +1,236 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    
+}
+.container{
+    height: 100vh;
+    width: 100%;
+}
+.container nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.container nav a{
+    font-size: 17px;
+    padding: 14px 70px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.6s transform ease;
+    
+}
+.container nav a:hover{
+    transform: scale(1.4);
+    color: rgb(222, 29, 29);
+}
+.images-bk{
+    height: 320px;
+    width: 100%;
+    animation-name: mayni;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    box-shadow: 1px 1px  25px 2px rgb(255, 255, 255);
+}
+@keyframes mayni {
+    0%{background-image: url(img1bc.jpg);}
+    25%{background-image: url(imgbc2.png);}
+    50%{background-image: url(imgbc3.jpg);}
+    75%{background-image: url(img-4bg.jpg);}
+    100%{background-image: url(imgbk5.jpg);}
+    100%{background-image: url(imgbk-6swiming.jpg);}
+    
+}
+.tital{
+    position: absolute;
+    top: 13px;
+    left: 20px;
+    font-size: 23px;
+    text-shadow: 5px 5px 30px rgb(255, 255, 255);
+    color: white;
+}
+.tital span{
+    color: rgb(216, 52, 30);
+    text-shadow: 5px 5px 30px rgb(218, 26, 26);
+}
+.welcometext h3{
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    top: 73%;
+    left: 23%;
+}
+.img1{
+    position: absolute;
+    top: 85%;
+    height: 300px;
+    width: 330px;
+    border-radius: 10%;
+}
+.img1text{
+    position: absolute;
+    top: 98%;
+    font-size: 20px;
+    left: 31%;
+    color: white;
+}
+.img1bc span{
+    position: absolute;
+    top: 88%;
+    left: 31%;
+    font-size: 27px;
+    text-shadow: 2px 2px 20px rgb(250, 32, 32);
+    color: rgb(217, 39, 39);
+}
+.img2bc p{
+    position: absolute;
+    top: 170%;
+    left: 2%;
+    color: white;
+    font-size: 20px;
+}
+.img2{
+    position: absolute;
+    top: 150%;
+    right: 5px;
+    height: 300px;
+    width: 330px;
+    border-radius: 10%;
+}
+.img2bc span{
+    position: absolute;
+    top: 160%;
+    left: 2%;
+    font-size: 27px;
+    text-shadow: 2px 2px 20px rgb(250, 32, 32);
+    color: rgb(217, 39, 39);
+}
+.img3{
+    position: absolute;
+    top: 210%;
+    left: 1%;
+    height: 300px;
+    width: 330px;
+    border-radius: 10%;
+
+}
+.img3bc p{
+    position: absolute;
+    top: 228%;
+    left: 30%;
+    color: white;
+    font-size: 20px;
+}
+.img3bc span{
+
+    position: absolute;
+    top: 217.5%;
+    left: 30.5%;
+    font-size: 27px;
+    text-shadow: 2px 2px 20px rgb(250, 32, 32);
+    color: rgb(217, 39, 39);
+}
+
+.img4{
+    position: absolute;
+    top: 275%;
+    right: 1%;
+    height: 300px;
+    width: 330px;
+    border-radius: 10%;
+
+}
+.img4bc p{
+    position: absolute;
+    top: 289%;
+    left: 3%;
+    color: white;
+    font-size: 20px;
+}
+.img4bc span{
+
+    position: absolute;
+    top: 277%;
+    left: 3%;
+    font-size: 27px;
+    text-shadow: 2px 2px 20px rgb(250, 32, 32);
+    color: rgb(217, 39, 39);
+}
+
+.img5{
+    position: absolute;
+    top: 330%;
+    left: 1%;
+    height: 300px;
+    width: 330px;
+    border-radius: 10%;
+
+}
+.img5bc p{
+    position: absolute;
+    top: 345%;
+    left: 30%;
+    color: white;
+    font-size: 20px;
+}
+.img5bc span{
+
+    position: absolute;
+    top: 333.5%;
+    left: 30.5%;
+    font-size: 27px;
+    text-shadow: 2px 2px 20px rgb(250, 32, 32);
+    color: rgb(217, 39, 39);
+}
+
+.block{
+    animation-name: appear;
+    filter: brightness(110%);
+    animation: appear 5s linear;
+    animation-timeline: view();
+    animation-range:entry 0% cover ;
+}
+
+@keyframes appear{
+    from{
+        opacity: 0;
+        scale: 0.6;
+    }
+    to{
+        opacity: 10;
+        scale: 1;
+    }
+    
+}
+
+footer {
+    width: 100%;
+    position: absolute;
+    top: 385%;
+    background: linear-gradient(to right, #00093c, #2d0b00);
+    color: white;
+    padding: 120px 0 30px;
+    border-top-left-radius: 125px;
+    font-size: 13px;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1; 
+}
+span{
+    text-shadow: 2px 2px 20px rgb(250, 32, 32);
+    color: rgb(217, 39, 39);
+}
